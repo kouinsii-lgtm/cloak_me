@@ -7,7 +7,7 @@ Cloak Me is a privacy-first companion for WhatsApp group messaging. It surfaces 
 •	Lets users manually decide when to reveal that they read messages.
 ## Architecture style
 •	Client-server with microservices-friendly boundaries. Core services are separated (API, Auth, Messaging sync, Scheduling, Notification) so we can scale parts independently.
-'''
+```
 flowchart LR
   subgraph Client
     MobileApp[Mobile / Web App]
@@ -45,11 +45,20 @@ flowchart LR
   NotificationService --> Push
   UserService --> MessageStore
   Audit --> MessageStore
-  '''
+  ```
   ## Technology Stack
   Frontend: React Native (mobile), React (web) — single codebase patterns optional.
   API / Backend: Node.js (TypeScript) or Python (FastAPI); small microservices.
+
+  
   Database: PostgreSQL for relational data (users, preferences, audit). Use column-level encryption for sensitive fields.
   Message store / queue: Redis for ephemeral cache; RabbitMQ / Amazon SQS for reliable task queue.
   
+  Object storage: S3-compatible (encrypted) for attachments.
+  
+  Auth / Secrets: OAuth for WhatsApp linking; JWT access tokens (short-lived) + refresh tokens (rotating & encrypted). Use a secrets manager (AWS Secrets Manager / HashiCorp Vault)
+
+APIs & Protocols: REST + Webhooks; long polling or WebSockets for real-time UI updates.
+
+Hosting: AWS (recommended) — ECS or EKS for containers, RDS for DB, ElastiCache for Redis.
   
