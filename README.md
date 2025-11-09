@@ -17,15 +17,17 @@ Read receipts are more than a UI feature; they are tied to social expectations a
 * Users managing multiple responsibilities
 * Anyone who wants more control over communication boundaries.
 ## Key features
-### 1.) Secret Reading Mode
+### 1.) Secret Reading Mode (private view mode)
 You can read your WhatsApp group messages inside Cloak Me. When you read them here, nobody can see that you have read the messages.
-### 2.) Choose When They Know You Read 
-Normally, WhatsApp shows a blue tick when you read a message.But with Cloak Me, you decide when to send that blue tick.
-### 3.) Safe WhatsApp Connection 
+### 2.) Choose When They Know You Read (manual read receipt trigger)
+Normally, WhatsApp shows a blue tick when you read a message. But with Cloak Me, you decide when to send that blue tick.
+### 3.) Safe WhatsApp Connection (secure whatsapp account link)
 You connect your WhatsApp in a safe way. Cloak Me does not keep your password or personal stuff.
-### 4.) Same Group Chats, Same Look 
+### 4.) Same Group Chats, Same Look (group chat syncing and organization)
 Your group chats appear in Cloak Me just like they do in WhatsApp, so you don’t have to learn anything new.
-### 5.) Calm, Quiet Reading 
+### 5.) Calm, Quiet Reading (distraction free reading interface)
 No one can see if you’re typing or online, you can read messages peacefully without pressure.
+## Artifacts
+https://www.figma.com/board/xCKLXPMZoAtIISEs3ursCO/Untitled?node-id=0-1&t=nNCvEmKU9krQu2wH-1
 
 
